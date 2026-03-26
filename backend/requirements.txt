@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pdfplumber
+python-docx
+pydantic
+python-multipart
+requests
+python-dotenv
