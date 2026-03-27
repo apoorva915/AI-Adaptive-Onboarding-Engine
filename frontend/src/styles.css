@@ -1,10 +1,10 @@
 :root {
-  --bg: #020617;
-  --card: #1e293b;
-  --text: #e8eefc;
-  --muted: #a8b3d6;
-  --accent: #0ea5e9;
-  --border: #334155;
+  --bg: #eef3fb;
+  --card: #f8fbff;
+  --text: #1f2a44;
+  --muted: #5d6b89;
+  --accent: #2f80ed;
+  --border: #d8e2f0;
   --danger: #ff6b6b;
 }
 
@@ -28,9 +28,10 @@ body {
 
 .form {
   background: var(--card);
-  border: 1px solid rgba(78, 161, 255, 0.25);
+  border: 1px solid var(--border);
   border-radius: 12px;
   padding: 16px;
+  box-shadow: 0 6px 20px rgba(31, 42, 68, 0.06);
 }
 
 .section {
@@ -48,8 +49,8 @@ label {
 textarea,
 input[type="file"] {
   color: var(--text);
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #ffffff;
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 10px;
 }
@@ -63,7 +64,7 @@ textarea {
   border: none;
   border-radius: 10px;
   padding: 12px 14px;
-  color: #051224;
+  color: #ffffff;
   font-weight: 700;
   cursor: pointer;
 }
@@ -85,6 +86,7 @@ textarea {
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 24px;
+  box-shadow: 0 8px 24px rgba(31, 42, 68, 0.05);
 }
 
 .section-title {
@@ -116,11 +118,12 @@ textarea {
 }
 
 .skill-tag {
-  background: #1e293b;
+  background: #edf3fc;
   padding: 6px 12px;
   border-radius: 999px;
   font-size: 13px;
-  border: 1px solid #334155;
+  border: 1px solid #cedcf0;
+  color: #25324e;
 }
 
 .list {
@@ -132,10 +135,10 @@ textarea {
 }
 
 .list-item {
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
   border-radius: 10px;
   padding: 10px 12px;
-  background: rgba(255, 255, 255, 0.03);
+  background: #ffffff;
 }
 
 .skill-name {
@@ -155,8 +158,8 @@ textarea {
 
 .error {
   margin-top: 12px;
-  background: rgba(255, 107, 107, 0.12);
-  border: 1px solid rgba(255, 107, 107, 0.35);
+  background: #ffecee;
+  border: 1px solid #ffc9cf;
   padding: 10px 12px;
   border-radius: 10px;
 }
@@ -168,7 +171,7 @@ textarea {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 12px;
-  background: linear-gradient(180deg, #0f172a, #020617);
+  background: linear-gradient(180deg, #f6f9ff, #edf3fc);
   overflow: auto;
 }
 
@@ -182,7 +185,7 @@ textarea {
   height: auto;
   min-height: 500px;
   margin-top: 24px;
-  background: linear-gradient(180deg, #0f172a, #020617);
+  background: linear-gradient(180deg, #f9fbff, #eef4fc);
   border-radius: 12px;
   padding: 20px;
   overflow: hidden;
@@ -193,10 +196,10 @@ textarea {
 }
 
 .step-card {
-  background: #020617;
+  background: #ffffff;
   padding: 12px;
   border-radius: 10px;
-  border: 1px solid #334155;
+  border: 1px solid var(--border);
   margin-bottom: 10px;
 }
 

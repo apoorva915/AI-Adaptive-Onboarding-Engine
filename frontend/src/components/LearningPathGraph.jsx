@@ -122,7 +122,7 @@ export default function LearningPathGraph({ graph }) {
       for (const id of layers.get(d) || []) sorted.push(byId.get(id));
     }
 
-    return { sorted, drawnEdges, positions, width, height, nodeW, nodeH };
+    return { sorted, drawnEdges, positions, width, height, nodeW, nodeH, depth };
   }, [nodes, edges]);
 
   const safeNodes = Array.isArray(nodes) ? nodes : [];
@@ -150,7 +150,7 @@ export default function LearningPathGraph({ graph }) {
             markerHeight="7"
             orient="auto"
           >
-            <path d="M 0 0 L 10 5 L 0 10 z" fill="rgba(78,161,255,0.85)" />
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="rgba(47,128,237,0.85)" />
           </marker>
         </defs>
 
@@ -169,9 +169,9 @@ export default function LearningPathGraph({ graph }) {
           const p = layout.positions.get(n.id);
           if (!p) return null;
 
-          const step = n.step ?? "";
           const label = n.label ?? n.id;
-          const stepText = step ? `Step ${step}` : "Step";
+          const level = (layout.depth.get(n.id) || 0) + 1;
+          const stepText = `Level ${level}`;
 
           return (
             <g key={n.id} transform={`translate(${p.x}, ${p.y})`}>
@@ -182,17 +182,21 @@ export default function LearningPathGraph({ graph }) {
                 ry="10"
                 width={layout.nodeW}
                 height={layout.nodeH}
-                fill="#1e293b"
-                stroke="#334155"
-                style={{ filter: "drop-shadow(0 4px 12px rgba(0,0,0,0.4))" }}
+                fill="#ffffff"
+                stroke="#d8e2f0"
+                style={{ filter: "drop-shadow(0 6px 16px rgba(31,42,68,0.10))" }}
               />
               {n.link ? (
                 <a href={n.link} target="_blank" rel="noreferrer">
-                  <g transform="translate(12,-16)">
-                    <rect x="0" y="0" rx="999" ry="999" width="88" height="18" fill="#0ea5e9" stroke="rgba(255,255,255,0.18)" />
+                  <g transform={`translate(${layout.nodeW - 102},-18)`}>
+                    <path
+                      d="M10 0 H78 A10 10 0 0 1 88 10 V12 A10 10 0 0 1 78 22 H46 L40 28 L38 22 H10 A10 10 0 0 1 0 12 V10 A10 10 0 0 1 10 0 Z"
+                      fill="#0ea5e9"
+                      stroke="rgba(255,255,255,0.2)"
+                    />
                     <text
                       x="44"
-                      y="12.5"
+                      y="14.5"
                       textAnchor="middle"
                       fill="#ffffff"
                       fontSize="10"
@@ -204,13 +208,17 @@ export default function LearningPathGraph({ graph }) {
                   </g>
                 </a>
               ) : (
-                <g transform="translate(12,-16)">
-                  <rect x="0" y="0" rx="999" ry="999" width="136" height="18" fill="#0f172a" stroke="#334155" />
+                <g transform={`translate(${layout.nodeW - 150},-18)`}>
+                  <path
+                    d="M10 0 H126 A10 10 0 0 1 136 10 V12 A10 10 0 0 1 126 22 H72 L64 28 L62 22 H10 A10 10 0 0 1 0 12 V10 A10 10 0 0 1 10 0 Z"
+                    fill="#eaf2ff"
+                    stroke="#cedcf0"
+                  />
                   <text
                     x="68"
-                    y="12.5"
+                    y="14.5"
                     textAnchor="middle"
-                    fill="#cbd5e1"
+                    fill="#42567b"
                     fontSize="9.5"
                     fontWeight="600"
                     fontFamily="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif"
@@ -222,7 +230,7 @@ export default function LearningPathGraph({ graph }) {
               <text
                 x="14"
                 y="28"
-                fill="rgba(168,179,214,0.95)"
+                fill="#6f7f9f"
                 fontSize="12"
                 fontFamily="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif"
               >
@@ -231,7 +239,7 @@ export default function LearningPathGraph({ graph }) {
               <text
                 x="14"
                 y="54"
-                fill="#e2e8f0"
+                fill="#1f2a44"
                 fontSize="13"
                 fontWeight="500"
                 fontFamily="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif"
