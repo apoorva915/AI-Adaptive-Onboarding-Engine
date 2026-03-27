@@ -8,13 +8,12 @@ from pathlib import Path
 from typing import Any, Dict, List, Literal
 
 import requests
-
-from backend.prompts import get_skill_extraction_prompt
-
 from dotenv import load_dotenv
 
+from .prompts import get_skill_extraction_prompt
+
 # Auto-load `backend/.env` so local development "just works" without `setx`/exporting env vars.
-_env_path = Path(__file__).resolve().parent / ".env"
+_env_path = Path(__file__).resolve().parent.parent / ".env"
 load_dotenv(dotenv_path=_env_path, override=False)
 
 logger = logging.getLogger(__name__)

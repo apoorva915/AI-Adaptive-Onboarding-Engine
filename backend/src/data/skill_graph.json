@@ -1,0 +1,202 @@
+{
+  "Programming Basics": [],
+ 
+  "Object-Oriented Programming": ["Programming Basics"],
+  "Functional Programming": ["Programming Basics"],
+ 
+  "Data Structures": ["Programming Basics"],
+  "Algorithms": ["Data Structures"],
+ 
+  "Discrete Mathematics": [],
+  "Linear Algebra": [],
+  "Calculus": [],
+  "Probability": ["Calculus"],
+  "Statistics": ["Probability"],
+ 
+  "Python": ["Programming Basics"],
+  "Java": ["Programming Basics"],
+  "C++": ["Programming Basics"],
+  "JavaScript": ["Programming Basics"],
+  "TypeScript": ["JavaScript"],
+  "Kotlin": ["Java"],
+ 
+  "HTML": ["Programming Basics"],
+  "CSS": ["HTML"],
+  "Tailwind CSS": ["CSS"],
+ 
+  "JavaScript Frontend": ["HTML", "CSS"],
+ 
+  "React": ["JavaScript Frontend"],
+  "Next.js": ["React"],
+  "React Native": ["React"],
+  "Redux": ["React"],
+  "Ant Design": ["React"],
+  "Vite": ["JavaScript Frontend"],
+ 
+  "Responsive Design": ["CSS"],
+ 
+  "Node.js": ["JavaScript"],
+  "Express.js": ["Node.js"],
+ 
+  "REST APIs": ["Programming Basics"],
+  "GraphQL": ["REST APIs"],
+ 
+  "Spring": ["Java"],
+  "Spring Boot": ["Spring"],
+ 
+  "FastAPI": ["Python"],
+  "Flask": ["Python"],
+  "Django": ["Python"],
+ 
+  "Database Fundamentals": ["Programming Basics"],
+  "SQL": ["Database Fundamentals"],
+ 
+  "PostgreSQL": ["SQL"],
+  "MySQL": ["SQL"],
+ 
+  "NoSQL": ["Database Fundamentals"],
+  "MongoDB": ["NoSQL"],
+  "Mongoose": ["MongoDB"],
+ 
+  "Amazon Aurora": ["SQL"],
+ 
+  "Database Design": ["SQL"],
+  "Indexing": ["Database Design"],
+ 
+  "Git": ["Programming Basics"],
+  "GitHub": ["Git"],
+ 
+  "Linux": ["Programming Basics"],
+  "Shell Scripting": ["Linux"],
+ 
+  "Docker": ["Linux"],
+  "Containerization": ["Docker"],
+ 
+  "Kubernetes": ["Docker"],
+ 
+  "CI/CD": ["Git"],
+  "Jenkins": ["CI/CD"],
+  "GitHub Actions": ["CI/CD"],
+ 
+  "Cloud Computing": ["Linux"],
+ 
+  "AWS": ["Cloud Computing"],
+ 
+  "AWS S3": ["AWS"],
+  "AWS Lambda": ["AWS"],
+  "AWS EC2": ["AWS"],
+ 
+  "AWS DMS": ["AWS"],
+  "AWS IAM": ["AWS"],
+ 
+  "Firebase": ["Cloud Computing"],
+  "Firebase Authentication": ["Firebase"],
+  "Firebase Firestore": ["Firebase"],
+ 
+  "Stripe": ["REST APIs"],
+  "Clerk Authentication": ["Authentication"],
+ 
+  "Authentication": ["Web Security"],
+  "OAuth": ["Authentication"],
+  "JWT": ["Authentication"],
+ 
+  "Web Security": ["JavaScript Frontend"],
+ 
+  "Networking Basics": ["Linux"],
+ 
+  "System Design": ["Algorithms", "Database Design"],
+ 
+  "Microservices": ["REST APIs"],
+  "API Gateway": ["Microservices"],
+ 
+  "Load Balancing": ["System Design"],
+  "Caching": ["Database Design"],
+ 
+  "Monitoring": ["Linux"],
+  "Logging": ["Monitoring"],
+  "Observability": ["Monitoring"],
+ 
+  "Machine Learning": [
+    "Linear Algebra",
+    "Statistics",
+    "Python"
+  ],
+ 
+  "Deep Learning": ["Machine Learning"],
+  "Neural Networks": ["Deep Learning"],
+ 
+  "TensorFlow": ["Deep Learning"],
+  "PyTorch": ["Deep Learning"],
+ 
+  "Natural Language Processing": ["Deep Learning"],
+  "Computer Vision": ["Deep Learning"],
+ 
+  "Transformers": ["Deep Learning"],
+  "Large Language Models": ["Transformers"],
+ 
+  "Prompt Engineering": ["Large Language Models"],
+  "Gemini API": ["Large Language Models"],
+ 
+  "Data Cleaning": ["Python"],
+  "Feature Engineering": ["Machine Learning"],
+ 
+  "Data Visualization": ["Python"],
+ 
+  "Blockchain Basics": ["Cryptography"],
+ 
+  "Cryptography": ["Discrete Mathematics"],
+ 
+  "Ethereum": ["Blockchain Basics"],
+  "Smart Contracts": ["Ethereum"],
+  "Solidity": ["Smart Contracts"],
+ 
+  "Web3 Development": ["JavaScript"],
+ 
+  "Wallet Integration": ["Blockchain Basics"],
+  "Blockchain Payments": ["Wallet Integration"],
+ 
+  "Inngest": ["Node.js"],
+ 
+  "Real-Time Systems": ["Node.js"],
+ 
+  "Task Queues": ["Real-Time Systems"],
+ 
+  "Event-Driven Architecture": ["Microservices"],
+ 
+  "Kanban Systems": ["Frontend Development"],
+ 
+  "Charts and Dashboards": ["React"],
+ 
+  "CRUD Operations": ["Database Design"],
+ 
+  "Pagination": ["CRUD Operations"],
+ 
+  "Search Systems": ["Database Design"],
+ 
+  "Histogram Algorithms": ["Algorithms"],
+ 
+  "Data Hiding Algorithms": ["Cryptography"],
+ 
+  "Image Processing": ["Linear Algebra"],
+ 
+  "Performance Optimization": ["Algorithms"],
+ 
+  "Concurrency": ["Operating Systems"],
+ 
+  "Operating Systems": ["Programming Basics"],
+ 
+  "Debugging": ["Programming Basics"],
+ 
+  "Testing": ["Programming Basics"],
+ 
+  "Unit Testing": ["Testing"],
+  "Integration Testing": ["Unit Testing"],
+ 
+  "Test Automation": ["Integration Testing"],
+ 
+  "Software Engineering Principles": ["Programming Basics"],
+ 
+  "Design Patterns": ["Object-Oriented Programming"],
+ 
+  "Clean Code": ["Programming Basics"]
+ }

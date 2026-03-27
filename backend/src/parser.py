@@ -7,7 +7,6 @@ import unicodedata
 from typing import Any, Optional
 
 import pdfplumber
-
 from docx import Document
 
 logger = logging.getLogger(__name__)

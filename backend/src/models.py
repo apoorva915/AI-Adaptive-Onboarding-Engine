@@ -27,4 +27,6 @@ class AnalyzeResponse(BaseModel):
     candidate_skills: List[Skill] = []
     required_skills: List[RequiredSkill] = []
     skill_gap: dict = {}
+    learning_path: list[dict] = []
+    learning_path_graph: dict = {}
 

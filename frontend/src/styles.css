@@ -1,10 +1,15 @@
 :root {
-  --bg: #0b1220;
-  --card: #111b33;
+  --bg: #020617;
+  --card: #1e293b;
   --text: #e8eefc;
   --muted: #a8b3d6;
-  --accent: #4ea1ff;
+  --accent: #0ea5e9;
+  --border: #334155;
   --danger: #ff6b6b;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -15,7 +20,8 @@ body {
 }
 
 .app {
-  max-width: 980px;
+  max-width: 1400px;
+  width: 96vw;
   margin: 0 auto;
   padding: 24px;
 }
@@ -70,18 +76,51 @@ textarea {
 .results {
   margin-top: 18px;
   display: grid;
-  gap: 16px;
+  gap: 24px;
 }
 
 .results-section {
   background: var(--card);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
   border-radius: 12px;
   padding: 16px;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.top-skill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .top-skill-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .subsection {
   margin-top: 12px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background: #1e293b;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  border: 1px solid #334155;
 }
 
 .list {
@@ -120,5 +159,44 @@ textarea {
   border: 1px solid rgba(255, 107, 107, 0.35);
   padding: 10px 12px;
   border-radius: 10px;
+}
+
+.lp-graph {
+  width: 100%;
+  height: 450px;
+  margin-top: 10px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  overflow: auto;
+}
+
+.lp-graph-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.graph-section {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  margin-top: 24px;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  border-radius: 12px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.steps-list {
+  margin-top: 10px;
+}
+
+.step-card {
+  background: #020617;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  margin-bottom: 10px;
 }
 

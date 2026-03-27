@@ -3,7 +3,8 @@ from __future__ import annotations
 import re
 from typing import Any, Dict, List, Set
 
-from backend.models import RequiredSkill, Skill
+from .models import RequiredSkill, Skill
+
 
 def normalize_skill_name(name: str) -> str:
     return (name or "").lower().strip()
